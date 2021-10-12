@@ -7,6 +7,12 @@ async function main() {
   await greeter.deployed();
 
   console.log("Greeter deployed to:", greeter.address);
+
+  const Token = await hre.ethers.getContractFactory("iToken");
+  const token = await Token.deploy("Ivo Token", "IVO");
+
+  await token.deployed();
+  console.log("Token deployed to:", token.address);
 }
 
 main()
