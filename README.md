@@ -13,3 +13,5 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+This work is part of [Full stack Ethereum workshop](https://github.com/dabit3/full-stack-ethereum-workshop#connecting-the-react-client)
